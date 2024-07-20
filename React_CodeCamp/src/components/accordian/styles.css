@@ -10,6 +10,10 @@
     background-color: #242424;
 }
 
+span{
+  display: flex;
+  flex-direction: column-reverse;
+}
   
   .accordian{
     border-radius: 5px;
