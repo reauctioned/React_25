@@ -66,3 +66,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.wrapper {
+  display:flex;
+
+}
+
+
+.accordian{
+  border-radius: 5px;
+  
+}
+
+.item:hover {
+  border-radius: 5px;
+  background-color: rgb(18, 18, 17);
+  ;
+}
