@@ -47,7 +47,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  box-shadow:12px 12px 12px #242424, -10px -10px 10px #242424;
 }
 button:focus,
 button:focus-visible {
@@ -67,19 +67,3 @@ button:focus-visible {
   }
 }
 
-.wrapper {
-  display:flex;
-
-}
-
-
-.accordian{
-  border-radius: 5px;
-  
-}
-
-.item:hover {
-  border-radius: 5px;
-  background-color: rgb(18, 18, 17);
-  ;
-}

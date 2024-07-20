@@ -1,6 +1,6 @@
 import {useState} from "react"
 import data from "./data"
-
+import './styles.css'
 
 
 export default function Accordian(){
@@ -12,6 +12,7 @@ export default function Accordian(){
 
 
     return <div className="wrapper">
+        <button>Multi Select</button>
         <div className="accordian">
             {data && data.length > 0 ? (
                 data.map((dataItem) => (

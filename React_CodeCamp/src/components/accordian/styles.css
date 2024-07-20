@@ -1,0 +1,23 @@
+.wrapper {
+    display:flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+.wrapper > button {
+    width: 20%;
+    padding: 3px;
+    margin-bottom: 50px;
+    background-color: #242424;
+}
+
+  
+  .accordian{
+    border-radius: 5px;
+    
+  }
+  
+  .item:hover {
+    border-radius: 5px;
+    background-color: rgb(18, 18, 17);
+    padding: 20px;
+  }
