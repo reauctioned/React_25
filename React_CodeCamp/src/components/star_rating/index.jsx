@@ -9,9 +9,9 @@ export default function StarRating({noOfStars = 5}){
 
 
     function handleMouseClick(currentIndex){ if (currentIndex === rating) {
-        setRating(0);
+        setRating(0)
       } else {
-        setRating(currentIndex);
+        setRating(currentIndex)
       }
     }
 
