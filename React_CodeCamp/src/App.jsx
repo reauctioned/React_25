@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Accordian from './components/accordian'
 import RandomColor from './components/color_gen'
+import StarRating from './components/star_rating'
 
 function App() {
   return (
     <div>
       {/* <Accordian/> */}
-      <RandomColor />
+      {/* <RandomColor /> */}
+      <StarRating />
     </div>
   )
 }

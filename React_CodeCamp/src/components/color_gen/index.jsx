@@ -50,7 +50,7 @@ export default function RandomColor(){
         }>Random Button</button>
            <div style={{display:"flex", justifyContent: "center", color: "white" ,marginLeft: '10%',fontSize:'30px',marginBottom:"50px"
            }}>
-            <h3>{typeOfColor === "rgb"? "" : "HEX"}</h3>
+            <h3 className="text">{typeOfColor === "rgb"? "" : "HEX"}</h3>
             <h3>{color}</h3>
            </div>
 
