@@ -25,6 +25,11 @@
 
 .product > img{
     width: 270px;
-    height: 200px;
+    height: 270px;
+    
+}
+
+button:disabled:hover{
+    color: #141414;
     
 }
