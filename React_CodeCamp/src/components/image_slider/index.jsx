@@ -50,11 +50,30 @@ if(errorMessage !== null)
 
     return <div className = "wrapper">
         <BsArrowLeftCircleFill className="arrow-left" />
+        {
+          images && images.length ?
+          images.map(imageItem => (
+            <img 
+              key = {imageItem.id}
+              alt = {imageItem.download_url}
+              src = {imageItem.download_url} 
+              className="current_image"/>
+          )):null
+        }
+
         
         <BsArrowRightCircleFill className="arrow-right" />
+        <span className="indicator">{
+          images && images.length ?
+          images.map((_,index) => (
+          <button
+          key={index}
+          className="current-indicator">
 
-
-
+          </button>
+           )):null
+           }
+        </span>
 
 
     </div>
