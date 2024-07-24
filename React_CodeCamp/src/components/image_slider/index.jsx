@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from 'react-icons/bs'
+import "./styles.css"
 
 
 
@@ -48,8 +49,8 @@ if(errorMessage !== null)
     </div>
 }
 
-    return <div className = "wrapper">
-        <BsArrowLeftCircleFill className="arrow-left" />
+    return <div className = "container">
+        <BsArrowLeftCircleFill className=" arrow arrow-left" />
         {
           images && images.length ?
           images.map(imageItem => (
@@ -57,13 +58,13 @@ if(errorMessage !== null)
               key = {imageItem.id}
               alt = {imageItem.download_url}
               src = {imageItem.download_url} 
-              className="current_image"/>
+              className="current-image"/>
           )):null
         }
 
         
-        <BsArrowRightCircleFill className="arrow-right" />
-        <span className="indicator">{
+        <BsArrowRightCircleFill className="arrow arrow-right" />
+        <span className="circle-indicators">{
           images && images.length ?
           images.map((_,index) => (
           <button
