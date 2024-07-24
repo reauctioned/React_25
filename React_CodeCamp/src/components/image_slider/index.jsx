@@ -4,7 +4,7 @@ import "./styles.css"
 
 
 
-export default function ImageSlider({url, limit= 5, page = 1}){
+export default function ImageSlider({url, limit= 8, page = 1}){
    
   const [images, setImages] = useState([])
   const [slide, setSlide] = useState(0)
@@ -61,7 +61,7 @@ if(errorMessage !== null)
         <BsArrowLeftCircleFill  onClick={handlePrevious}   className=" arrow arrow-left" />
         {
           images && images.length ?
-          images.map(imageItem => (
+          images.map((imageItem,index) => (
             <img 
               key = {imageItem.id}
               alt = {imageItem.download_url}
@@ -77,11 +77,12 @@ if(errorMessage !== null)
           images.map((_,index) => (
           <button
           key={index}
+          onClick={() => setSlide(index)}
           className={
-            slide === index ? "current-indicator" : "current-indicator hide-current-indicator"
+            slide === index ? "current-indicator" : "current-indicator inactive-indicator"
           }>
-           onClick={()=> setSlide(index)}
-          </button>
+           
+          </button> 
            )):null
            }
         </span>
