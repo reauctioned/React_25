@@ -30,7 +30,15 @@ export default function ImageSlider({url, limit= 5, page = 1}){
     }
   }
 
-console.log(images)
+function handlePrevious(){
+  setSlide(slide === 0 ? images.length - 1 : slide - 1)
+}
+
+function handleNext(){
+  setSlide(slide === images.length - 1 ? 0 : slide + 1)
+}
+
+
   useEffect(()=>{
     if(url !== '') fetchImages(url)
   },[url])
@@ -50,7 +58,7 @@ if(errorMessage !== null)
 }
 
     return <div className = "container">
-        <BsArrowLeftCircleFill className=" arrow arrow-left" />
+        <BsArrowLeftCircleFill  onClick={handlePrevious}   className=" arrow arrow-left" />
         {
           images && images.length ?
           images.map(imageItem => (
@@ -58,19 +66,21 @@ if(errorMessage !== null)
               key = {imageItem.id}
               alt = {imageItem.download_url}
               src = {imageItem.download_url} 
-              className="current-image"/>
+              className={slide === index ? "current-image" : "current-image hide-current-image"}/>
           )):null
         }
 
         
-        <BsArrowRightCircleFill className="arrow arrow-right" />
+        <BsArrowRightCircleFill  onClick={handleNext}       className="arrow arrow-right" />
         <span className="circle-indicators">{
           images && images.length ?
           images.map((_,index) => (
           <button
           key={index}
-          className="current-indicator">
-
+          className={
+            slide === index ? "current-indicator" : "current-indicator hide-current-indicator"
+          }>
+           onClick={()=> setSlide(index)}
           </button>
            )):null
            }
