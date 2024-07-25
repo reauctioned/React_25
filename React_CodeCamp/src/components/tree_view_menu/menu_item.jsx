@@ -16,11 +16,11 @@ export default function MenuItem({ item }) {
 
   return (
     <li>
-      <div>
+      <div style={{display:"flex", gap:"20px"}}>
         <p>{item.label}</p>
         {item && item.children && item.children.length ? 
           <span onClick={() => handleToggleChildren(item.label)}>{
-            displayCurrentChildren[item.label]? <FaMinus color="#ffffff" size={25}/> : <FaPlus color="#ffffff" size={25}/>
+            displayCurrentChildren[item.label]? <FaMinus color="#ffffff" size={15}/> : <FaPlus color="#ffffff" size={15}/>
           }</span>
           : null
         }
