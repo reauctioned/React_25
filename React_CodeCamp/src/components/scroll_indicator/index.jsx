@@ -29,14 +29,19 @@ export  default function  ScrollIndicator({url}){
     },[url])
 
     function handleScrollPercentage(){
-        
-    }
-      
-    useEffect(()=>
-    window.addEventListener('scroll',handleScrollPercentage))
-    return ()=>
-        window.removeEventListener('scroll',{})
+     const scrollCounter = document.body.scrollTop || document.documentElement.scrollTop
 
+     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+
+     setScrollPercentage((scrollCounter/height)*100)
+    }
+      console.log(scrollPercentage)
+    useEffect(()=>
+   {window.addEventListener('scroll', handleScrollPercentage)
+    
+    return ()=>
+   {window.removeEventListener('scroll',{})}
+    },[])
 
     return (
         <div>
