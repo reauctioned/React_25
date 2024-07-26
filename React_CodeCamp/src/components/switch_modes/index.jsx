@@ -1,6 +1,7 @@
 import { useState } from "react"
 import UseLocalStorage from "./useLocalStorage"
 
+
 import './styles.css'
 
 
@@ -17,11 +18,12 @@ export default function LightDarkMode(){
 
      
     return <div className="light-dark-mode" data-theme={theme}>
-    <div style={{display:'flex',flexDirection:'column', justifyContent:"center", gap:'20px'}}>
+    <div>
         Hello world!
         <button 
         onClick={handleToggleTheme}
         >Change Mode</button>
+        
     </div>
     </div>
 }
