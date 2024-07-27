@@ -23,7 +23,7 @@ function App() {
       {/* <TreeView menus={menus} /> */}
          {/* <QrCodeGenerator /> */}
         {/* <LightDarkMode /> */}
-        <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+        {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
     </div>
   )
 }
