@@ -2,7 +2,7 @@ import Tabs from './tabs'
 
 
 
-export default function TabTest(){
+export default function TabsTest(){
 
     const tabs = [
         {
@@ -15,10 +15,12 @@ export default function TabTest(){
         
     ]
 
-
+    function handleChange(currentTabIndex){
+       console.log(currentTabIndex)
+    }
 
 
     return(
-        <Tabs tabsContent={tabs}/>
+        <Tabs tabsContent={tabs} onChange={handleChange}/>
     )
 }

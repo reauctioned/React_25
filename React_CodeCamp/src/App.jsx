@@ -11,6 +11,8 @@ import menus from './components/tree_view_menu/data.js'
 import QrCodeGenerator from './components/qr_cde/index.jsx'
 import LightDarkMode from './components/switch_modes'
 import ScrollIndicator from './components/scroll_indicator'
+import TabsTest from './components/custom_tabs/tab-test.jsx'
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
          {/* <QrCodeGenerator /> */}
         {/* <LightDarkMode /> */}
         {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
+        <TabsTest/>
     </div>
   )
 }
