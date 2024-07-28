@@ -14,7 +14,17 @@ const [showModalPopup, setShowModalPopup]= useState(false)
    return <div>
         <button onClick={handleModalPopup}>Open Modal Popup</button>
         {
-            showModalPopup && <Modal />
+            showModalPopup &&
+            <Modal 
+            
+            body=
+            {<div>
+                This is the div part of the pop up
+            </div>}
+            header=
+            {<div>
+                This is the header part of pop up
+            </div>}/>
 
         }
     </div>
