@@ -13,6 +13,7 @@ import LightDarkMode from './components/switch_modes'
 import ScrollIndicator from './components/scroll_indicator'
 import TabsTest from './components/custom_tabs/tab-test.jsx'
 import ModalTest from './components/modal-popup/modaltest.jsx'
+import ProfileFinder from './components/profile_finder/profilefinder.jsx'
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
         <LightDarkMode />
         <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
         <TabsTest/> */}
-        <ModalTest />
+        {/* <ModalTest /> */}
+        <ProfileFinder />
     </div>
   )
 }
