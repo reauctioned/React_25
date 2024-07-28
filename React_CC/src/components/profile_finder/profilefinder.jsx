@@ -1,5 +1,6 @@
     import { useEffect, useState } from "react"
 import User from "./user"
+import "./styles.css"
 
 
 
@@ -23,13 +24,10 @@ import User from "./user"
                 setUserName('')
  
             }
-            
         }
+        
+        console.log(userData)
 
-
-        function handleSubmit(){
-          fetchGitHubUserData()
-        }
         
         useEffect(()=> {
             fetchGitHubUserData()
@@ -38,6 +36,9 @@ import User from "./user"
             return <h1>Loading Data...</h1>
         }
 
+            function handleSubmit(){
+              fetchGitHubUserData()
+            }
     return <div className="github-profile-container">
         <div className="input-record">
                 <input 
