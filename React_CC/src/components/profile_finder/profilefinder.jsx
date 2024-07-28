@@ -1,4 +1,5 @@
     import { useEffect, useState } from "react"
+import User from "./user"
 
 
 
@@ -19,7 +20,8 @@
             if(data){
                 setUserData(data)
                 setLoading(false)
-
+                setUserName('')
+ 
             }
             
         }
@@ -47,6 +49,9 @@
                 />
                 <button onClick={handleSubmit}>Search</button>
         </div>
+        {
+            userData !== null ? <User user={userData} /> : null
+        }
     </div>
 
     }
