@@ -12,21 +12,23 @@ import QrCodeGenerator from './components/qr_cde/index.jsx'
 import LightDarkMode from './components/switch_modes'
 import ScrollIndicator from './components/scroll_indicator'
 import TabsTest from './components/custom_tabs/tab-test.jsx'
+import ModalTest from './components/modal-popup/modaltest.jsx'
 
 
 function App() {
   return (
     <div>
-      {/* <Accordian/> */}
-      {/* <RandomColor /> */}
-      {/* <StarRating /> */}
-      {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={"1"} limit={"8"} /> */}
-      {/* <LoadMore /> */}
-      {/* <TreeView menus={menus} /> */}
-         {/* <QrCodeGenerator /> */}
-        {/* <LightDarkMode /> */}
-        {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
-        <TabsTest/>
+      {/* <Accordian/>
+      <RandomColor />
+      <StarRating />
+      <ImageSlider url={'https://picsum.photos/v2/list'} page={"1"} limit={"8"} />
+      <LoadMore />
+      <TreeView menus={menus} />
+         <QrCodeGenerator />
+        <LightDarkMode />
+        <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+        <TabsTest/> */}
+        <ModalTest />
     </div>
   )
 }
