@@ -1,3 +1,6 @@
+
+
+
 .modal{
     position: fixed;
     z-index: 1;
@@ -5,6 +8,8 @@
     left: 0;
     top: 0;
     overflow: auto;
+    justify-content: center;
+    background-blend-mode: color;
     
 }
 
@@ -16,4 +21,13 @@
     border: 1px solid ;
     width: 80%;
     color: black;
+}
+
+.close-modal-icon
+{
+    cursor: pointer;
+    text-align: right;
+    padding: 3px;
+    background-color: rgb(195, 195, 195);
+
 }

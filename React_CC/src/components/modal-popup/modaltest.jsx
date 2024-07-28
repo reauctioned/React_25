@@ -9,6 +9,9 @@ const [showModalPopup, setShowModalPopup]= useState(false)
     function handleModalPopup(){
         setShowModalPopup(!showModalPopup)
     }
+    function onClose(){
+       setShowModalPopup(false)
+    }
 
 
    return <div>
@@ -17,6 +20,8 @@ const [showModalPopup, setShowModalPopup]= useState(false)
             showModalPopup &&
             <Modal 
             
+            onClose={onClose}
+
             body=
             {<div>
                 This is the div part of the pop up
