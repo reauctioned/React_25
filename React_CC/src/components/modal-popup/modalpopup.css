@@ -4,7 +4,7 @@
 .modal{
     position: fixed;
     z-index: 1;
-    padding-top: 150px;
+    padding-top: 50px;
     left: 0;
     top: 0;
     overflow: auto;
@@ -15,12 +15,12 @@
 
 .modal-content{
     position: relative;
-    background-color: white;
+    background-color: #141414;
     margin: auto;
     padding: 0;
-    border: 1px solid ;
+    border-radius: 15px;
     width: 80%;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .close-modal-icon
@@ -29,5 +29,6 @@
     text-align: right;
     padding: 3px;
     background-color: rgb(195, 195, 195);
+    font-weight: bold;
 
 }

@@ -15,7 +15,7 @@ const [showModalPopup, setShowModalPopup]= useState(false)
 
 
    return <div>
-        <button onClick={handleModalPopup}>Open Modal Popup</button>
+        <button onClick={handleModalPopup}>Popup</button>
         {
             showModalPopup &&
             <Modal 
