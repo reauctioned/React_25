@@ -1,4 +1,4 @@
-
+import "./modalpopup.css"
 
 export default function Modal({id, header , body , footer }){
     return <div id={ id || 'Modal'} className="modal">
