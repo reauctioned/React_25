@@ -1,22 +1,11 @@
-.tic-tac-toe-container::after{
-    clear: both;
-    content:"";
-    display: table;
+.tic-tac-toe-container{
     display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     align-items: center;
     margin-top: 10px;
 }
 
-.square{
-    border: 1px solid red;
-    float: left;
-    font-size: 40px;
-    height: 100px;
-    padding: 0px;
-    text-align: center;
-    width: 100px;
-
-}
 
 button:hover{
     background-color: #141414;
