@@ -17,6 +17,15 @@ button{
 
 }
 
+.Restart{
+    height: 50px;
+
+}
+
+.Restart:hover{
+    background-color: rgb(190, 190, 190);
+    color: black;
+}
 
 
 button:hover{
