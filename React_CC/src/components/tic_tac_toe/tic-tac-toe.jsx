@@ -6,8 +6,8 @@ export default function TicTacToe(){
 
 
 
-    function Square(){
-        return <button className="square">{value}</button>
+    function Square({value}){
+        return <button className="Square">{value}</button>
     }
 
 
