@@ -54,7 +54,7 @@ export default function TicTacToe(){
             } else if (getWinner(squares))
             { setStatus(`Winner is ${getWinner(squares)}`)}
             else
-            {setStatus(`Next Turn: ${isXTurn? 'X' : 'O'}`)}
+            {setStatus(`Turn: ${isXTurn? 'X' : 'O'}`)}
     },[squares,isXTurn])
 
  
