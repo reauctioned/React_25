@@ -14,6 +14,8 @@ export default function TicTacToe(){
     
     function handleClick(getCurrentSquare){
             let cpySquares = [...squares]
+            if(cpySquares[getCurrentSquare])
+                return
             cpySquares[getCurrentSquare]= isXTurn ? 'X' : 'O'
             setIsXTurn(!isXTurn)
             setSquares(cpySquares)
