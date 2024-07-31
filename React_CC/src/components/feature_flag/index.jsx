@@ -5,6 +5,7 @@ import LightDarkMode from "../switch_modes"
 import TicTacToe from "../tic_tac_toe/tic-tac-toe"
 import TreeView from "../tree_view_menu"
 import { FeatureFlagContext } from "./context"
+import menus from "../tree_view_menu/data"
 
 
 export default function FeatureFlag(){
@@ -26,8 +27,8 @@ export default function FeatureFlag(){
             {key: 'showAccordian',
              component: <Accordian/>
             },
-            {key: 'TreeView',
-             component: <TreeView/>
+            {key: 'showTreeView',
+             component: <TreeView menus={menus}/>
             }
            
 
