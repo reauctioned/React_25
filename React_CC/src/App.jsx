@@ -16,6 +16,8 @@ import ModalTest from './components/modal-popup/modaltest.jsx'
 import GitHubProfileFinder from './components/profile_finder/profilefinder.jsx'
 import SearchAutoComplete from './components/search_autocomplete/index.jsx'
 import TicTacToe from './components/tic_tac_toe/tic-tac-toe.jsx'
+import FeatureFlagGobalState from './components/feature_flag/context/index.jsx'
+import FeatureFlag from './components/feature_flag/index.jsx'
 
 
 function App() {
@@ -35,6 +37,9 @@ function App() {
         {/* <GitHubProfileFinder /> */}
         {/* <SearchAutoComplete /> */}
         {/* <TicTacToe /> */}
+        <FeatureFlagGobalState>
+        <FeatureFlag/>  
+        </FeatureFlagGobalState>
     </div>
   )
 }
