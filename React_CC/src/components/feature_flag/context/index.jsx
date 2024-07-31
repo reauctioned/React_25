@@ -16,9 +16,12 @@ export default function FeatureFlagGobalState({children}){
     try{
       const res = await featureFlagsDataCall()
       console.log(res);
+      setEnableFlags(res)
+      setLoading(true)
     }catch(error){
         console.log(error);
         throw new Error(error)
+        setLoading(false)
     }
    }
 
@@ -29,7 +32,7 @@ export default function FeatureFlagGobalState({children}){
    },[])
 
     return (
-        <FeatureFlagContext.Provider value={{}}>
+        <FeatureFlagContext.Provider value={{loading, enableFlags}}>
             {children}
         </FeatureFlagContext.Provider>
 
