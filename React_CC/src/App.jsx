@@ -18,6 +18,7 @@ import SearchAutoComplete from './components/search_autocomplete/index.jsx'
 import TicTacToe from './components/tic_tac_toe/tic-tac-toe.jsx'
 import FeatureFlagGobalState from './components/feature_flag/context/index.jsx'
 import FeatureFlag from './components/feature_flag/index.jsx'
+import FetchHookTest from './components/useFetch-hook/test.jsx'
 
 
 function App() {
@@ -37,9 +38,10 @@ function App() {
         {/* <GitHubProfileFinder /> */}
         {/* <SearchAutoComplete /> */}
         {/* <TicTacToe /> */}
-        <FeatureFlagGobalState>
+        {/* <FeatureFlagGobalState>
         <FeatureFlag/>  
-        </FeatureFlagGobalState>
+        </FeatureFlagGobalState> */}
+        <FetchHookTest/>
     </div>
   )
 }
