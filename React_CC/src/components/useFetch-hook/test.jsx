@@ -15,6 +15,9 @@ export default function FetchHookTest() {
             <p ket={productItem.key}>{productItem.title} </p>
           ))
         : null}
+        {
+            error ? <h3>{error}</h3> : null
+        }
     </div>
   );
 }
