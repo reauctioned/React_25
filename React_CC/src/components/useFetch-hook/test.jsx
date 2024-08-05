@@ -12,7 +12,7 @@ export default function FetchHookTest() {
       {loading ? <h3>Loading...</h3> : null}
       {data && data.products && data.products.length
         ? data.products.map((productItem) => (
-            <p ket={productItem.key}>{productItem.title} </p>
+            <p key={productItem.key}>{productItem.title} </p>
           ))
         : null}
         {

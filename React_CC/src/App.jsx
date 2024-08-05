@@ -21,6 +21,8 @@ import FeatureFlag from './components/feature_flag/index.jsx'
 import FetchHookTest from './components/useFetch-hook/test.jsx'
 import UseOnClickOutsideTest from './components/useOutsideClick-hook/test.jsx'
 import UseWindowResizeTest from './components/useResposive-hook/test.jsx'
+import ScrollToTB from './components/scroll-to-top/bottom/index.jsx'
+import ScrollToTopAndBottom from './components/scroll-to-top/bottom/index.jsx'
 
 
 function App() {
@@ -45,7 +47,8 @@ function App() {
         </FeatureFlagGobalState> */}
         {/* <FetchHookTest/> */}
         {/* <UseOnClickOutsideTest/> */}
-        <UseWindowResizeTest/>
+        {/* <UseWindowResizeTest/> */}
+        <ScrollToTopAndBottom/>
     </div>
   )
 }
