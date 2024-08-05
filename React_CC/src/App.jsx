@@ -20,6 +20,7 @@ import FeatureFlagGobalState from './components/feature_flag/context/index.jsx'
 import FeatureFlag from './components/feature_flag/index.jsx'
 import FetchHookTest from './components/useFetch-hook/test.jsx'
 import UseOnClickOutsideTest from './components/useOutsideClick-hook/test.jsx'
+import UseWindowResizeTest from './components/useResposive-hook/test.jsx'
 
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
         <FeatureFlag/>  
         </FeatureFlagGobalState> */}
         {/* <FetchHookTest/> */}
-        <UseOnClickOutsideTest/>
+        {/* <UseOnClickOutsideTest/> */}
+        <UseWindowResizeTest/>
     </div>
   )
 }
