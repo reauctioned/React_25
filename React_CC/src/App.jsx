@@ -48,7 +48,7 @@ function App() {
         {/* <FetchHookTest/> */}
         {/* <UseOnClickOutsideTest/> */}
         {/* <UseWindowResizeTest/> */}
-        <ScrollToTopAndBottom/>
+        {/* <ScrollToTB/> */}
     </div>
   )
 }
