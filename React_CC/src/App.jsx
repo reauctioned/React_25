@@ -23,6 +23,7 @@ import UseOnClickOutsideTest from './components/useOutsideClick-hook/test.jsx'
 import UseWindowResizeTest from './components/useResposive-hook/test.jsx'
 import ScrollToTB from './components/scroll-to-top/bottom/index.jsx'
 import ScrollToTopAndBottom from './components/scroll-to-top/bottom/index.jsx'
+import ScrollToSection from './components/scroll-to-top/bottom/scroll_sections.jsx'
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
         {/* <UseOnClickOutsideTest/> */}
         {/* <UseWindowResizeTest/> */}
         {/* <ScrollToTB/> */}
+        <ScrollToSection/>
     </div>
   )
 }
