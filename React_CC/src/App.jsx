@@ -24,6 +24,8 @@ import UseWindowResizeTest from './components/useResposive-hook/test.jsx'
 import ScrollToTB from './components/scroll-to-top/bottom/index.jsx'
 import ScrollToTopAndBottom from './components/scroll-to-top/bottom/index.jsx'
 import ScrollToSection from './components/scroll-to-top/bottom/scroll_sections.jsx'
+// import BirthDayList from './components/birthday_counter/list.jsx'
+import BirthdayCounter from './components/birthday_counter/index.jsx'
 
 
 function App() {
@@ -50,7 +52,8 @@ function App() {
         {/* <UseOnClickOutsideTest/> */}
         {/* <UseWindowResizeTest/> */}
         {/* <ScrollToTB/> */}
-        <ScrollToSection/>
+        {/* <ScrollToSection/> */}
+        <BirthdayCounter/>
     </div>
   )
 }
